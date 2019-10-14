@@ -1,11 +1,18 @@
 html {
   background: url("https://i.pinimg.com/originals/7d/8b/ce/7d8bcebe6b1132d6dd1b2f87b3c92c83.png");
   background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
 }
+
 body {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
 }
 #overlay {
   position: fixed; /* Sit on top of the page content */
@@ -15,17 +22,35 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.253); /* Black background with opacity */
+  background-color: rgba(0, 0, 0, 0.39); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 .hand {
   width: 50%;
-  height: 10px;
-  background: black;
+  height: 8px;
+  background: rgb(248, 199, 4);
   position: absolute;
   top: 50%;
   transform-origin: 100%; /*allows us to rotate at a certain position on the x axis*/
   transform: rotate(90deg);
   transition: all 0.2s;
   transition-timing-function: cubic-bezier(0, 2.53, 0.46, 1.03);
+}
+
+.face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-10px); /* account for the height of the clock hands */
+}
+.clock {
+  width: 10rem;
+  height: 10rem;
+  border: 30px solid black;
+  border-radius: 100%;
+  margin: 50px auto;
+  position: relative;
+  padding: 1rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #c71d1d,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
 }
