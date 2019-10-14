@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="./stylesheet/style.css" />
   </head>
   <body>
-    <div class="clock" id="overlay">
-      <div class="face">
-        <div class="hand hrHand"></div>
-        <div class="hand minHand"></div>
-        <div class="hand secHand"></div>
+    <div id="overlay">
+      <div class="digitalWrap">
+        <div class="digital">
+          <span id="hourDisplay"></span>
+          <span class="blink">:</span>
+          <span id="minDisplay"></span>
+          <span class="blink">:</span>
+          <span id="secDisplay"></span>
+        </div>
+      </div>
+
+      <div class="clock">
+        <div class="face">
+          <div class="hand hrHand"></div>
+          <div class="hand minHand"></div>
+          <div class="hand secHand"></div>
+        </div>
       </div>
     </div>
+
     <script src="./javascript/app.js"></script>
   </body>
 </html>
