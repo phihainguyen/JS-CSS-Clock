@@ -51,8 +51,8 @@ body {
   transform: translateY(
     20%
   ); /* this will adjust the clock that it lays in the middle of the webpage vertically in the middle */
-  width: 50rem;
-  height: 50rem;
+  width: 30rem;
+  height: 30rem;
   border: 20px solid rgba(255, 42, 4, 0.616);
   border-radius: 50%;
   margin: auto;
@@ -64,6 +64,8 @@ body {
 .digitalWrap {
   justify-content: center;
   display: flex;
+  margin: 20px;
+  height: 10vh;
 }
 .digital {
   margin: auto;
@@ -91,4 +93,8 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.container {
+  height: 100vh;
 }

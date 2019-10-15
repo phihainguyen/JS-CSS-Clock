@@ -47,8 +47,6 @@ ready(function() {
     hourHand.style.transform = `rotate(${hourDegree}deg)`;
     hourConvert = hours.toString();
     hourDisplay.innerHTML = hourConvert;
-
-    //======blinking semi colon=========//
   }
   setInterval(setDate, 1000);
 });
